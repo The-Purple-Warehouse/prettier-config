@@ -1,0 +1,12 @@
+{
+  "name": "@harker-robo/prettier-config",
+  "version": "0.0.0",
+  "description": "Code style definitions for Harker Robotics",
+  "main": "index.json",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
+  "author": "Aarav Borthakur",
+  "license": "MIT",
+  "devDependencies": {}
+}
