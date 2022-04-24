@@ -8,5 +8,9 @@
   },
   "author": "Aarav Borthakur",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HarkerRobo/prettier-config"
+  }
 }
