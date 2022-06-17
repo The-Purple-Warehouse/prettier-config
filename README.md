@@ -1,29 +1,39 @@
-# prettier-config
-Code style definitions for Harker Robotics. 
+Harker Robotics apps use [prettier](https://prettier.io) to enforce a standardized code style across codebases. The `@harker-robo/prettier-config` NPM package defines the formatting rules.
 
 ## Installation
-Install this package locally and [prettier](https://www.npmjs.com/package/prettier) globally.
+Install [prettier](https://www.npmjs.com/package/prettier) and the configuration package.
 
-    npm i -g prettier
-    npm i --save-dev @harker-robo/prettier-config
+    npm i --save-dev prettier @harker-robo/prettier-config
 
 ## Usage
-1. Add the `prettier` key in package.json
+1. Add the `prettier` key to package.json
 ```jsonc
 // package.json
 {
-    ...
+    // ...
     "prettier": "@harker-robo/prettier-config"
 }
 ```
 
-2. Run the formatter.
+2. Add the formatting script to package.json.
+```jsonc
+// package.json
+{
+    // ...
+    "scripts": {
+        // ...
+        "format": "npx prettier . -w"
+    }
+}
 ```
-prettier ./* -w
+
+3. Run the formatter.
+```
+npm run format
 ```
 
 ## Links
 * [Ignoring files](https://prettier.io/docs/en/ignore.html)
-* [Overriding configuration](https://prettier.io/docs/en/configuration.html)
 * [GitHub integration](https://github.com/marketplace/actions/prettier-action)
 * [Editor integration](https://prettier.io/docs/en/editors.html)
+* [Overriding configuration](https://prettier.io/docs/en/configuration.html) (not recommended)
